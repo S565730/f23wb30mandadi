@@ -13,7 +13,8 @@ block content
     else if cols<1||cols>10
         p Invalid input. Please provide integer values for rows and columns within the range of 1 to 10.
     else
-      table#outer
+      hr
+       table#outer
       - for (let i = 0; i < rows; i++)
         tr#middle
           - for (let j = 0; j < cols; j++)
